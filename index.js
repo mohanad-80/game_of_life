@@ -9,7 +9,6 @@ iterationsCounter.textContent = numberOfIterations;
 
 const tvScreen = document.getElementById("screen");
 for (let i = 0; i < 1925; i++) {
-  // board[Math.floor(i / 55)][i - (Math.floor(i / 55) * 55)] = 0;
   board[i] = 0;
   tempBoard[i] = 0;
   boardForReseting[i] = 0;
@@ -23,7 +22,6 @@ for (let i = 0; i < 1925; i++) {
       cell.classList.toggle("live");
       board[+cell.getAttribute("id")] = 1;
       boardForReseting[+cell.getAttribute("id")] = 1;
-      console.log(cell.getAttribute("id"));
     } else {
       cell.classList.toggle("dead");
       cell.classList.toggle("live");
@@ -104,7 +102,6 @@ function oneIteration() {
 
 function displayBoard() {
   const cells = tvScreen.childNodes;
-  // console.log(cells[0]);
   cells.forEach((cell, idx) => {
     if (board[idx]) {
       cell.classList.add("live");
