@@ -186,22 +186,37 @@ randomBtn.addEventListener("click", (e) => {
 // #################
 
 // Get the modal
-var modal = document.querySelector(".modal");
+var infoModal = document.querySelector(".info-modal");
+var creditModal = document.querySelector(".credit-modal");
 // Get the button that opens the modal
 var infoBtn = document.querySelector(".info-btn");
+var creditBtn = document.querySelector(".credit-btn");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal 
-infoBtn.onclick = function() {
-  modal.style.display = "block";
-}
+var infoSpan = document.getElementsByClassName("close")[0];
+var creditSpan = document.getElementsByClassName("close")[1];
+// When the user clicks the button, open the modal
+infoBtn.onclick = function () {
+  infoModal.style.display = "block";
+};
+creditBtn.onclick = function () {
+  creditModal.style.display = "block";
+};
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+infoSpan.onclick = function () {
+  infoModal.style.display = "none";
+};
+creditSpan.onclick = function () {
+  creditModal.style.display = "none";
+};
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.onclick = function (event) {
+  if (event.target == infoModal) {
+    infoModal.style.display = "none";
+  } else if (event.target == creditModal) {
+    creditModal.style.display = "none";
   }
-}
+};
+
+// chage the copyright year
+const year = document.querySelector(".year");
+year.textContent = new Date().getFullYear();

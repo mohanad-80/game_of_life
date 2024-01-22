@@ -198,61 +198,139 @@
         </div>
       </div>
     </div>
-    <!-- <div class="info-popup"> -->
-    <div id="myModal" class="modal">
+    <div id="myModal" class="info-modal modal">
       <div class="modal-content">
         <span class="close">×</span>
+        <h2 class="centered">Conway's Game of Life</h2>
+        <br />
         <p>
-          Some text in the Modal.. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Suspendisse eu nulla sed nibh porta ornare.
-          Pellentesque tincidunt, justo ac facilisis sollicitudin, sem velit
-          mollis neque, nec iaculis odio arcu ut justo. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. In pellentesque elit eros, eu
-          viverra libero maximus ac. Sed id odio molestie, mattis metus sit
-          amet, fermentum urna. Donec pretium feugiat nulla at imperdiet.
-          Curabitur accumsan condimentum lorem vel consectetur. Integer sed
-          dapibus enim. Morbi sed pulvinar justo, ut mollis magna. Sed at turpis
-          gravida ligula pellentesque cursus ac in mi. Praesent dictum aliquam
-          est sit amet molestie. Curabitur et metus quam. Donec fermentum est
-          quis magna laoreet, at auctor tellus condimentum. In sit amet dui
-          vestibulum, varius lacus eu, sagittis dolor. Morbi pellentesque
-          sodales accumsan. Maecenas egestas gravida enim et tristique. Fusce
-          diam tellus, posuere quis enim vitae, tempus luctus libero. Fusce at
-          euismod sapien, sit amet fringilla purus. Phasellus ornare in ligula
-          vel iaculis. Nunc scelerisque et sapien eu bibendum. Vestibulum id
-          odio in neque bibendum tristique. Suspendisse in justo arcu. Fusce
-          porttitor mollis neque, venenatis pharetra lorem eleifend at. Etiam ut
-          interdum magna, sed tempor tortor. Vestibulum a facilisis turpis. Sed
-          dictum hendrerit sem, id feugiat enim aliquam condimentum. Ut cursus
-          finibus tempor. Ut et enim non felis hendrerit ultrices. Sed efficitur
-          rhoncus interdum. Sed ac lorem nisl. In id interdum ex, a maximus
-          purus. Aliquam dictum, lacus a aliquet viverra, diam orci varius
-          libero, sed tincidunt sapien diam at lorem. Vivamus a placerat augue,
-          eget feugiat nunc. Nunc non sem eget quam hendrerit ultrices non
-          porttitor ipsum. Phasellus dolor urna, facilisis ut efficitur id,
-          tristique et ipsum. Fusce eget ligula rhoncus, egestas arcu sed,
-          volutpat nisl. Aliquam sit amet dui at metus egestas aliquet vulputate
-          eu lorem. Ut et tellus mauris. Ut vel tortor tristique, vestibulum
-          elit non, auctor magna. Aliquam porta, nisi tincidunt ullamcorper
-          maximus, magna leo pharetra arcu, et venenatis mi velit non sem. Morbi
-          eget molestie mi. Proin tristique lectus vel nulla gravida aliquam.
-          Sed vitae lacus congue lacus mollis placerat. Donec auctor, urna nec
-          blandit hendrerit, nibh augue ultrices eros, molestie euismod mi leo
-          at nunc. Nam sed dolor in enim tempus euismod. Ut consequat, lacus eu
-          vestibulum rhoncus, leo urna feugiat lacus, vel viverra lectus arcu
-          quis nunc. Sed non hendrerit ipsum. Maecenas at diam id lectus cursus
-          lacinia vitae quis ante. Cras eu rutrum nibh, et fermentum magna.
-          Nullam in malesuada ligula. Nunc dui leo, interdum sed consequat
-          suscipit, fermentum et ante. Pellentesque habitant morbi tristique
-          senectus et netus et malesuada fames ac turpis egestas. Sed eu
-          efficitur odio, et mattis arcu. Proin tincidunt tortor nec nibh
-          elementum, quis vulputate nunc bibendum. Vestibulum velit augue,
-          bibendum at augue aliquam, elementum ultricies eros. Vestibulum ornare
-          blandit sem, ut venenatis libero. Sed porta consequat nisi.
+          Conway's Game of Life is a cellular automaton devised by the British
+          mathematician John Conway in 1970. It is a zero-player game, meaning
+          that its evolution is determined by its initial state, with no further
+          input from humans.
+        </p>
+        <br />
+        <p>
+          The game is played on a two-dimensional grid of cells, where each cell
+          can be either alive or dead. The rules govern the transitions between
+          generations based on the state of neighboring cells, leading to the
+          emergence of various interesting patterns and behaviors.
+        </p>
+        <br />
+        <h3>Rules:</h3>
+        <ul>
+          <li>
+            <strong>Birth:</strong> A dead cell with exactly three live
+            neighbors becomes a live cell.
+          </li>
+          <li>
+            <strong>Death by isolation:</strong> A live cell with fewer than two
+            live neighbors dies (isolation).
+          </li>
+          <li>
+            <strong>Death by overcrowding:</strong> A live cell with more than
+            three live neighbors dies (overcrowding).
+          </li>
+          <li>
+            <strong>Survival:</strong> A live cell with two or three live
+            neighbors survives to the next generation.
+          </li>
+        </ul>
+        <br />
+        <p>
+          The game progresses in generations, with each generation being a new
+          configuration of live and dead cells based on the application of these
+          rules.
+        </p>
+        <br />
+        <p>
+          Conway's Game of Life has been of interest to mathematicians, computer
+          scientists, and enthusiasts due to its ability to generate complex and
+          interesting patterns, including gliders, oscillators, and still lifes.
         </p>
       </div>
     </div>
-    <!-- </div> -->
+    <div id="myModal" class="credit-modal modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h2 class="centered">Credits</h2>
+        <br />
+        <p>
+          This implementation of Conway's Game of Life was created by
+          <a
+            class="portfolio"
+            href="https://mohanad-80.github.io/portfolio/"
+            target="_blank"
+            >Mohanad Ahmed</a
+          >
+        </p>
+        <br />
+        <h3>Resources:</h3>
+        <ul>
+          <li>
+            <strong>Original Game of Life:</strong> Conceived by
+            <a
+              href="https://en.wikipedia.org/wiki/John_Horton_Conway"
+              target="_blank"
+              >John Conway</a
+            >
+            in 1970.
+          </li>
+          <li>
+            <strong>Code Inspiration:</strong>
+            <ul>
+              <li>
+                <a href="https://playgameoflife.com/" target="_blank"
+                  >Play game of life website.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/Honda222/pen/xxBrzxg"
+                  target="_blank"
+                  >How to make the pop-up window.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/IMnYzR0zX0c?si=Q1UVd6FELcR74yiX"
+                  target="_blank"
+                  >How to make a triangle with css.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Graphics and Design:</strong>
+            <ul>
+              <li>
+                UI design by the amazing
+                <a
+                  href="https://www.behance.net/Mariam-Abdel-Raheem"
+                  target="_blank"
+                  >Mariam Abdel Raheem</a
+                >
+              </li>
+              <li>
+                Icons used are from
+                <a href="https://icons.getbootstrap.com/" target="_blank"
+                  >Bootstrap</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <p>
+          Feel free to explore and modify the source code on [link to your
+          repository or project page].
+        </p>
+        <br />
+        <p class="centered">
+          © <span class="year"></span> Mohanad Ahmed. All rights reserved.
+        </p>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

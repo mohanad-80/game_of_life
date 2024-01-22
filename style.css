@@ -262,7 +262,7 @@ button:active {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scroll if needed */
+  /* overflow: auto; Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
@@ -271,7 +271,7 @@ button:active {
 .modal-content {
   background-color: var(--accent-color);
   margin: 10% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 40px;
   border: 1px solid var(--screen-frame-color2);
   width: 60%; /* Could be more or less, depending on screen size */
 }
@@ -289,4 +289,22 @@ button:active {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* ################ */
+
+.centered {
+  text-align: center;
+}
+
+.modal p, li {
+  font-size: larger;
+}
+
+li {
+  margin-left: 30px;
+}
+
+a {
+  color: var(--txt-color);
 }
