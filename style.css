@@ -7,6 +7,9 @@
   --screen-frame-color1: #19221E;
   --screen-frame-color2: #131715;
 
+  --hover-color: #7B2EB2;
+  --clicked-color: #510488;
+
   --font-family: inter;
 }
 
@@ -237,4 +240,13 @@ button.save-btn{
   flex-direction: column;
   align-items: center;
   gap: 2.53rem;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--clicked-color);
 }
