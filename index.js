@@ -120,6 +120,10 @@ function run() {
   }, 500);
 }
 
+function stop() {
+  clearInterval(iterationInterval);
+}
+
 function clearBoard() {
   const cells = tvScreen.childNodes;
   cells.forEach((cell, idx) => {
@@ -148,27 +152,48 @@ nextIterationBtn.addEventListener("click", (e) => {
 });
 
 const startBtn = document.querySelector(".start-btn");
-startBtn.addEventListener("click", (e) => {
+const startIcon = document.querySelector(".start-icon");
+const stopIcon = document.querySelector(".stop-icon");
+
+function startTheGame() {
+  startBtn.classList.remove("start");
+  startBtn.classList.add("stop");
+  startBtn.childNodes[5].textContent = "Stop";
+  startIcon.classList.add("hide");
+  stopIcon.classList.remove("hide");
+  run();
+}
+
+function stopTheGame() {
+  startBtn.classList.add("start");
+  startBtn.classList.remove("stop");
+  startBtn.childNodes[5].textContent = "Start";
+  startIcon.classList.remove("hide");
+  stopIcon.classList.add("hide");
+  stop();
+}
+
+function startAndStopTheGame() {
   if (startBtn.classList.contains("start")) {
-    startBtn.classList.toggle("start");
-    startBtn.classList.toggle("stop");
-    startBtn.childNodes[3].textContent = "Stop";
-    run();
+    startTheGame();
   } else {
-    startBtn.classList.toggle("start");
-    startBtn.classList.toggle("stop");
-    startBtn.childNodes[3].textContent = "Start";
-    clearInterval(iterationInterval);
+    stopTheGame();
   }
+}
+
+startBtn.addEventListener("click", (e) => {
+  startAndStopTheGame();
 });
 
 const clearBtn = document.querySelector(".clear-btn");
 clearBtn.addEventListener("click", (e) => {
+  stopTheGame();
   clearBoard();
 });
 
 const resetBtn = document.querySelector(".reset-btn");
 resetBtn.addEventListener("click", (e) => {
+  stopTheGame();
   boardForReseting.forEach((cell, idx) => {
     board[idx] = cell;
   });

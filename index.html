@@ -22,18 +22,27 @@
         <div class="main-btns">
           <button class="start-btn start">
             <svg
+              class="start-icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
+              width="45"
+              height="45"
+              fill="currentColor"
+              viewBox="0 0 16 16"
             >
               <path
-                d="M12.4999 9.99997C12.4999 9.99997 11.6665 13.3333 11.6665 20C11.6665 26.6666 12.4999 30 12.4999 30C12.4999 30 15.8332 29.1666 21.6665 25.8333C27.4999 22.5 29.1665 20 29.1665 20C29.1665 20 27.4999 17.5 21.6665 14.1666C15.8332 10.8333 12.4999 9.99997 12.4999 9.99997Z"
-                stroke="#EBD2FC"
-                stroke-width="4.07"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+              />
+            </svg>
+            <svg
+              class="stop-icon hide"
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5z"
               />
             </svg>
             <span> Start </span>
@@ -41,45 +50,34 @@
           <button class="next-iteration-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
+              width="28"
+              height="28"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
             >
-              <g clip-path="url(#clip0_15_30)">
-                <path
-                  d="M7.06513 3.58647C6.24489 2.76591 6.24489 1.4359 7.06513 0.61573M7.06513 3.58647L18.1253 14.6465L7.06513 0.61573M7.06513 3.58647L7.41868 3.23292L7.41875 3.23299M7.06513 3.58647L7.41875 3.23299M7.06513 0.61573C7.88536 -0.205235 9.21576 -0.205235 10.0363 0.61573L7.06513 0.61573ZM7.41875 3.23299C6.79364 2.60762 6.79376 1.59415 7.41867 0.969297L7.41884 0.969126C8.04373 0.343674 9.05737 0.343571 9.68269 0.969198L9.68278 0.969288L22.5821 13.8683M7.41875 3.23299L18.8324 14.6465L19.186 15L18.8324 15.3536L7.41837 26.767L7.06478 26.4136L7.41827 26.7671C6.79324 27.3925 6.79339 28.4061 7.41828 29.031L7.41835 29.031C8.04327 29.6562 9.05704 29.6563 9.68238 29.031L9.68238 29.031L22.5817 16.1317M22.5821 13.8683C22.8943 14.1808 23.0504 14.5896 23.0504 15C23.0504 15.4104 22.894 15.8193 22.5817 16.1317M22.5821 13.8683L22.9358 13.5149L22.5822 13.8684L22.5821 13.8683ZM22.5817 16.1317L22.9354 16.4852L22.5818 16.1316L22.5817 16.1317Z"
-                  fill="#EED9FD"
-                  stroke="#EED9FD"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_15_30">
-                  <rect
-                    width="30"
-                    height="30"
-                    fill="white"
-                    transform="translate(0 30) rotate(-90)"
-                  />
-                </clipPath>
-              </defs>
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
             </svg>
             Next iteration
           </button>
           <button class="reset-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 34 34"
-              fill="none"
+              width="35"
+              height="35"
+              fill="currentColor"
+              class="bi bi-arrow-clockwise"
+              viewBox="0 0 16 16"
             >
               <path
-                d="M29.0272 21.2368C28.1086 23.844 26.3675 26.082 24.0662 27.6137C21.7649 29.1454 19.0282 29.8877 16.2682 29.7289C13.5083 29.5701 10.8748 28.5187 8.76447 26.7331C6.65412 24.9475 5.18128 22.5245 4.56787 19.8291C3.95446 17.1337 4.2337 14.312 5.36352 11.7892C6.49335 9.26628 8.41254 7.17889 10.8319 5.84152C13.2513 4.50414 16.0399 3.98923 18.7774 4.37435C23.3992 5.02457 26.4528 8.3745 29.75 11.3333M29.75 11.3333V2.83332M29.75 11.3333H21.25"
-                stroke="#EED9FD"
-                stroke-width="3.07"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                fill-rule="evenodd"
+                d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+              />
+              <path
+                d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
               />
             </svg>
             Reset
@@ -114,17 +112,17 @@
             <button class="clear-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="27"
-                viewBox="0 0 27 27"
-                fill="none"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-trash"
+                viewBox="0 0 16 16"
               >
                 <path
-                  d="M15.75 10.6875C15.75 10.6875 16.3125 11.8125 16.3125 14.0625C16.3125 16.3125 15.75 17.4375 15.75 17.4375M11.25 10.6875C11.25 10.6875 10.6875 11.8125 10.6875 14.0625C10.6875 16.3125 11.25 17.4375 11.25 17.4375M6.75001 6.75003C6.75001 13.3411 5.20996 22.5 13.5 22.5C21.79 22.5 20.25 13.3411 20.25 6.75003M4.50002 6.75003H22.5M16.875 6.75003V5.62503C16.875 3.62811 15.033 3.37503 13.5 3.37503C11.967 3.37503 10.125 3.62811 10.125 5.62503V6.75003"
-                  stroke="#EED9FD"
-                  stroke-width="2.07172"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                />
+                <path
+                  d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
                 />
               </svg>
               Clear
@@ -132,14 +130,15 @@
             <button class="save-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="21"
-                viewBox="0 0 15 21"
-                fill="none"
+                width="19"
+                height="19"
+                fill="currentColor"
+                class="bi bi-floppy"
+                viewBox="0 0 16 16"
               >
+                <path d="M11 2H9v3h2z" />
                 <path
-                  d="M0 0V21L7.5 14.6014L15 21V0H0ZM1.53842 1.3125H13.4616V17.7188L7.5 12.6326L1.53842 17.7188V1.3125Z"
-                  fill="#EBD2FC"
+                  d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0M1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5m3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4zM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5z"
                 />
               </svg>
               Save
@@ -149,9 +148,9 @@
             <button class="info-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                fill="white"
+                width="25"
+                height="25"
+                fill="currentColor"
                 class="bi bi-info-lg"
                 viewBox="0 0 16 16"
               >
@@ -160,7 +159,7 @@
                 />
               </svg>
             </button>
-            <button class="sound-btn">
+            <!-- <button class="sound-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -176,13 +175,13 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </button>
+            </button> -->
             <button class="credit-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                fill="white"
+                width="25"
+                height="25"
+                fill="currentColor"
                 class="bi bi-c-circle"
                 viewBox="0 0 16 16"
               >
